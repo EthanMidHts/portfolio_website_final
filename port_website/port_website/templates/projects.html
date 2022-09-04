@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-2 text-center">
+    <h3>Health Pet:</h3>
+    <p>
+    Health Pet is an android app that attempts to gamify building healthy routines and habits.
+    Users create name and customize a health pet and set and complete personal goals to unlock points to buy
+    more cosmetic options for their pet with point bonuses and reassurance for achieving streaks
+    with a certain goal. Health Pet was developed in Android Studio using Java, Kotlin, MVVM architecture,
+    and a Firebase database.</p>
+
+    {% load static %}
+    <img src="{% static 'admin/img/healthpet.jpg' %}">
+    <br>
+    <hr>
+
+    <h3>Movie Recommendation Algorithm:</h3>
+    <p>
+    Provided users with five movie recommendations based on an inputted movie they enjoy.  To do this I
+    used item-item content based to find the top five highest rated movies among other users that rated
+    the inputted movie highly. This was done using the k-nearest neighbors algorithm. The dataset used
+    was the publicly available MovieLens dataset and the algorithm was written in python using sklearn
+    and SciPy.</p>
+    {% load static %}
+
+    <br>
+    <hr>
+
+    <h3>This Website: </h3>
+    <p>This website was homemade using Bootstrap 3 and Django 4. Special thanks to Deanna Sagaris for
+    the favicon.
+    </p>
+    {% load static %}
+    <img src="{% static 'admin/img/gis/favicon-removebg-preview.png' %}">
+    <br>
+    <hr>
+
+    <h3>Presentation Manager:</h3>
+    <p>PM is a platform that organizes multiple presentations and allows the audience to submit
+    feedback. The app allows users to form groups and schedule presentation time slots and audience
+    members to leave reviews and ratings on groups presentations. The application uses Ruby on
+    Rails, bootstrap 3 and Javascript.
+    </p>
+    {% load static %}
+    <br>
+    <hr>
+
+    <h3>Network Bulletin Board Server:</h3>
+
+    <p>
+    Created a custom network protocol to host a bulletin board app. The board allows users from
+    different devices to simultaneously post to the server, join groups with other students,
+    DM other students and groups, and view past messages. Coded using Java and Java’s native
+    networking libraries.
+    </p>
+    <hr>
+
+
+    <h3>Jumbo light up fan:</h3>
+    <p>Converted a large circular fan into a light up fan able to display words and syllabus up to
+    seven at a time. The LED strips were controlled with code written on a Raspberry Pi
+    microcontroller.
+    </p>
+
+    {% load static %}
+    <img src="{% static 'admin/img/fan.jpg' %}">
+    <hr>
+
+    <h3>Professor website redesign:</h3>
+    <p>I updated an OSU professors public website to be more modern and easy to navigate. None of the
+    website content was changed it, but it was given a facelift. Website was rewritten using
+    Middleman.
+    </p>
+    <hr>
+    <h3>Library database redesign:</h3>
+    <p>Redesigned a library database using database design best practices and proper normalization
+    techniques. Database done using MySQL and rest was done in Java.
+    </p>
+    <hr>{% load static %}
+    <img src="{% static 'admin/img/database.jpg' %}">
+    <hr>
+        <h3>FEH robot competition:</h3>
+    <p>
+    Designed and built an automated robot to complete an obstacle course within a fixed time limit
+    for an OSU sponsored competition. Our robot’s main mechanism was an arm on a 3D printer like
+    grid that was capable of completing every obstacle without another mechanisms. Robot was
+    controlled with the OSU mobius controller and was programmed in C. Competition was canceled due
+    to covid but robot achieved all goals and bonus goals during each checkpoint prior to the competition.
+    </p>
+    {% load static %}
+    <img src="{% static 'admin/img/feh_robot.jpg' %}">
+</div>
+{% endblock %}

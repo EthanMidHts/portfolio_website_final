@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'admin/img/gis/favicon-removebg-preview.png' %}">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    background-color: #f8f8f8;
+    height: 100%;
+  }
+  p {
+   font-size: 16px;
+   padding-right:5px;
+  }
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-color: #7c9082; /* Green */
+    color: #f8f8f8;
+  }
+  .bg-2 {
+    background-color: #f8f8f8;
+    color: #818181;
+  }
+  .bg-3 {
+     background-color: #f8f8f8;
+     color: #818181;
+     height: 100%;
+  }
+  .bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #F3EFF5;
+  }
+  .container-fluid {
+    padding-top: 25px;
+    padding-bottom: 25;
+  }
+  @media only screen and (min-width: 800px){
+    .form-style {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  }
+  .btn{
+     border-radius: 0 !important;
+     background-color: #7c9082;
+     color: #f8f8f8;
+     font-size: 12px;
+     letter-spacing: 5px;
+     padding: 10px;
+  }
+  .form-control{
+    border-radius:0 !important;
+    background-color: #f8f8f8;
+    border: 0px;
+    border-bottom: 1px solid #818181;
+    box-shadow: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #B4656F !important;
+  }
+  main {
+    height: 100%
+  }
+  .col-sm-8 {
+    display: flex;
+    line height
+    height: 200px;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+  }
+  .col {
+    display: flex;
+    line height
+    height: 200px;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+  }
+  hr {
+      border-style: solid;
+      border-width: 1px;
+  }
+  img {
+    object-fit: scale-down;
+    width: 20%;
+    }
+  h3 {
+    color: #B4656F;
+  </style>
+</head>
+<body>
+{% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

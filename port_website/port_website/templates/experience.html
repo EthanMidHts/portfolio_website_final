@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container-fluid bg-2 text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                {% load static %}
+                <img src="{% static 'admin/img/osucse_logo.png' %}">
+            </div>
+            <div class="col-sm-8">
+                <p>I spent a school year being a grader for the CSE class
+                Software 1. Software 1 serves as an introduction to object-oriented
+                programming and design. My main responsibilities were providing students with
+                feedback on homework and projects, and helping students work
+                through problems in labs and office hours. I was happy to be able
+                to help alot of students understand recursion and develop strong
+                debugging instincts.<br><br>Fall 2020-Spring 2021</p>
+
+            </div>
+      </div>
+      <hr>
+  </div>
+   <div class="container-fluid bg-2 text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                {% load static %}
+                <img src="{% static 'admin/img/BXOhio.png' %}">
+            </div>
+            <div class="body">
+                <div class="col-sm-8">
+                    <p>I worked as a Software Engineering intern for The Builders Exchange of Ohio.
+                    Most of my work was done on internal use windows applications using Google's C# OCR software IronOCR.
+                        I did back end work in C# using visual studio and "front-end" work using winforms and model view
+                        controller architecture.<br><br>Spring 2022-Fall 2022 full time, Fall 2022-Spring 2023 part time
+                    </p>
+                </div>
+            </div>
+      </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h2 class="margin">Hi I'm Ethan</h2>
+  {% load static %}
+  <img src="{% static 'admin/img/headshot.png' %}" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+</div>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <p>I'm a student graduating from The Ohio State University this spring looking for full time employment.
+  Most of my work is in front end and mobile development, but I have experience with back end and fullstack development
+  too. In my free time I organize and run weekly dnd sessions. I also got quarantined in a dorm with a ping pong table
+  and nothing else during covid so watch out trendy tech companies I'm a formidable competitor.</p>
+</div>
+{% endblock %}

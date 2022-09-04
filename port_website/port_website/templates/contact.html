@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-3 text-center">
+    <h3 class="margin">CONTACT ME!</h3>
+    <div class = "form-style">
+        {% load static %}
+      <form method="POST">
+          {% csrf_token %}
+        <input type="name" class="form-control" name="name" placeholder="NAME">
+        <input type="email" class="form-control" name="email" placeholder="EMAIL">
+        <textarea class="form-control" rows="6" name="message" placeholder="MESSAGE"></textarea>
+        <div class="form-actions>">
+          <button type="submit" class="btn">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+</div>
+{% endblock %}
